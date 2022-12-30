@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+// import "../../styles/index.scss"
 
 export default function NoteIndexPage() {
   return (
