@@ -1,20 +1,28 @@
 .marquee {
-  height: 50px;
-  --gap: 1rem;
-  position: relative;
   display: flex;
+  position: relative;
+
   overflow: hidden;
   user-select: none;
+  --gap: 1rem;
   gap: var(--gap);
+
+  height: 50px;
 }
 
 .marquee-content {
-  flex-shrink: 0;
   display: flex;
+  flex-shrink: 0;
   justify-content: space-around;
-  gap: var(--gap);
   min-width: 100%;
+
+  gap: var(--gap);
   animation: scroll 10s paused linear infinite;
+
+  color: lightgrey;
+  font-size: 7dvh;
+  text-decoration: none;
+  border: 0.1vh solid white;
 }
 
 .marquee:hover .marquee-content {

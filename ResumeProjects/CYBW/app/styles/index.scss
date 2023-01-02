@@ -4,13 +4,30 @@
 $primary-color: black;
 $primary-text: white;
 
+main {
+    font-family: 'Jost', sans-serif;
+}
+
 ul {
     list-style: none;
     padding-inline: 0;
+}
+
+.title-area {
+    height: 45dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 
 .show-list {
     display: grid;
     grid-template-rows: repeat(9, [rows] 1fr);
+}
+
+
+.shows {
+    background-color: $primary-color;
 }

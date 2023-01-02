@@ -14,7 +14,7 @@ import sassStylesheetUrl from "./styles/index.css"
 import { getUser } from "./session.server";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: sassStylesheetUrl }];
+  return [{ rel: "stylesheet", href: sassStylesheetUrl }, {rel: "preconnect", href: "https://fonts.googleapis.com"}];
 };
 
 export const meta: MetaFunction = () => ({
